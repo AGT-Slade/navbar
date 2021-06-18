@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Component</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="#">Escanor</a></li>
+      <li class="item"><a href="#">Home</a></li>
+      <li class="item"><a href="#">About</a></li>
+      <li class="item"><a href="#">Services</a></li>
+      <li class="item button"><a href="#">Login</a></li>
+      <li class="item button secondary"><a href="#">Sign Up</a></li>
+      <li class="toggle"><a href="#"><span class="bars"></span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <a href="#" style="position:fixed;bottom:0;">http://youtube.com</a>
+  </main>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+
+    $(function() {
+      $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+        }
+        else {
+          $(".item").addClass("active");
+        }
+
+
+      })
+    });
+
+
+  </script>
+
+</body>
+
+</html>
